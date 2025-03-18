@@ -1,0 +1,16 @@
+{
+  "services": [
+    {
+      "name": "backend",
+      "buildCommand": "cd backend && docker build -t backend .",
+      "startCommand": "docker run -p 8000:8000 backend",
+      "rootDirectory": "backend"
+    },
+    {
+      "name": "frontend",
+      "buildCommand": "cd frontend && docker build -t frontend .",
+      "startCommand": "docker run -p 3000:3000 frontend",
+      "rootDirectory": "frontend"
+    }
+  ]
+}
